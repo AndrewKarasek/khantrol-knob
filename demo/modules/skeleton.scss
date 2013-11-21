@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+}
+
+.kk-faceWrap{
+	width: 100%;
+	height: 100%;
+	width: 10em;
+	height: 10em;
+	overflow: hidden; /*swap to clearfix*/
+	float: left;
+}
+
+.kk-movingFace{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(70,70,70);
+	@include border-radius(200px);
+}
+
+
+.khantrol-knob{
+	position: relative; /* js this */
+	background-color: rgba(0,0,0,0.4);
+	float: left;
+}
+
+
+
+
+.kk-hand{
+	top: 0;
+	width: 4px;
+	border-top: 1em solid white;
+	@include box-sizing(border-box);
+	/* js these */
+	position: absolute;
+	height: 5em; /*half knob height */
+	left: 5em; /* half knob width - half stick width */
+	background-color: transparent;
+}
+
+
+
+.kk-center{
+	height: 4px;
+	width: 4px;
+	background-color: white;
+	@include border-radius(30px);
+
+}
+
+input[type="number"], .khanknob-value{
+	display: none;
+}
+
+
+
+.on-light{
+	width: 2em;
+	height: 2em;
+	background-color: red;
+
+}
+
+.turned-on .on-light{
+	width: 2em;
+	height: 2em;
+}
+
+
+.holding{
+	
+
+}
+
+
+@import "skeu";

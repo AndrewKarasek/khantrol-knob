@@ -1,0 +1,447 @@
+@import "compass";
+
+@import "modules/skeleton";
+
+
+
+body{
+	background-color: gainsboro;
+	;
+	@include single-transition(all, 0.2s, linear, 0s);
+	margin: 2em;
+}
+
+
+
+*::selection{
+	background-color: transparent;
+}
+
+.sli-hold{
+	width: 100%;
+	float: left;
+	@include box-sizing(border-box);
+	padding: 2em;
+}
+
+
+.wurkin-gurl{
+	.khanknob-container, .kk-movingFace{
+		background-color: transparent;
+	}
+
+	.khantrol-knob{
+		height: 11em;
+		width: 11em;
+	}
+
+	.khanknob-center{
+		display: none;
+	}
+
+	.khanknob-wrap{
+		background-color: transparent;
+		position: absolute;
+	}
+
+
+}
+
+
+
+
+
+.sku{
+
+
+.circle{
+
+		width: 10em;
+	height: 10em;
+	
+	@include border-radius(100px);
+}
+
+.abso{
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+.middlecircle{
+	@include box-sizing(border-box);
+	position: absolute;
+	
+	width: 12em;
+	height: 12em;
+	margin: 1.5em;
+
+	padding: 0em;
+
+	@include border-radius(100px);
+}
+
+.middleshads{
+		@include background(
+	                      linear-gradient(bottom, rgb(0, 0, 0), rgb(62, 62, 62))
+	                     );
+
+	@include single-box-shadow(rgba(60,60,60, 0.8), 0, -5px, 3px, 1px);
+}
+
+.inner{
+
+		@include background(
+	                      linear-gradient(bottom, rgb(29, 29, 29), rgb(50, 50, 50))
+	                     );
+
+	@include single-box-shadow(rgb(79,79,79), 0, -1px, 3px, 2px, inset);
+}
+
+.vinner{
+	@include single-box-shadow(rgb(27,27,27), 0, -6px, 1px, 1px, inset);
+}
+
+.maindrop{
+
+	@include single-box-shadow(rgb(44,44,44), 0, 0, 6px, 3px);
+}
+
+.shadow{
+	position: absolute;
+	z-index: 0;
+	width: 11em;
+	margin-left: 0.5em;
+	top: 3em;
+	height: 12em;
+	background-color: black;
+	@include border-radius(150px);
+
+	@include single-box-shadow(rgb(0,0,0), 0, 0, 10px, 1px);
+
+}
+
+
+
+.az{
+	position: absolute;
+	z-index: 10;
+}
+
+.base{
+	@include box-sizing(border-box);
+	@include single-box-shadow(rgb(72,72,72), 0, -1px, 3px, 2px, inset);
+	width: 15em;
+	height: 15em;
+	position: relative;
+	@include border-radius(200px);
+	background-color: rgb(50, 50, 50);
+	overflow: hidden;
+}
+
+.base-cover{
+	margin-top: 0.2em;
+	@include single-box-shadow(none);
+		@include background(
+	                      linear-gradient(bottom, rgb(20, 20, 20), rgb(50, 50, 50))
+	                     );
+}
+
+.base-outline{
+		width: 15em;
+	height: 15em;
+	position: relative;
+	@include border-radius(200px);
+	border: 5px solid black;
+}
+
+.noise{
+	height: 0.5em;
+	width: 0.5em;
+	background-color: white;
+	margin-left: 4em;
+	margin-top: 1em;
+	@include border-radius(30px);
+
+}
+}
+
+
+
+
+
+
+.blk{
+	.base-outline{
+		height: 15em;
+		width: 15em;
+		background-color: black;
+		border: 10px solid black;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.base{
+
+		@include single-box-shadow(rgb(72,72,72), 0, -1px, 3px, 2px, inset);
+
+		background-color: rgb(50,50,50);
+
+		overflow: hidden;
+	}
+	.base-cover{
+
+
+        top: 0.2em;
+	}
+
+	.middle{
+		@include background(
+                  linear-gradient(bottom, rgb(10, 10, 10), rgb(40,40,40), rgb(60, 60, 60))
+        );
+
+        @include single-box-shadow(rgb(50,50,50), 0, -5px, 8px, 1px);
+
+		height: 13em;
+		width: 13em;
+		margin: 1em;
+		margin-top: 0.8em;
+		position: relative;
+	}
+
+	.middle-shadow{
+		margin-top: 30%;
+		        @include single-box-shadow(rgba(15,15,15, 0.7), 0, 0, 12px, 1px);
+
+		background-color: rgba(15,15,15, 0.7);
+	}
+
+	.face{
+		width: 11em;
+		height: 11em;
+		margin: 1em;
+		margin-top: 0.8em;
+		background-color: rgb(50,50,50);
+
+        @include single-box-shadow(rgb(79,79,79), 0, -1px, 3px, 2px, inset);
+	}
+
+	.face-cover{
+
+
+
+	      @include single-box-shadow(rgba(30,30,30, 0.7), 0, -6px, 3px, 2px, inset);
+	    top: 0.2em;
+	}
+
+	.main-grad{
+			@include background(
+	                  linear-gradient(bottom, rgb(30, 30, 30), rgb(50,50,50))
+	        );
+	}
+
+	.circle{
+		@include border-radius(150px);
+	}
+
+	.abso{
+		position: absolute;
+	}
+
+	.match{
+		width: 100%;
+		height: 100%;
+	}
+
+	.oh{
+		overflow: hidden;
+	}
+
+
+	.v2{
+		.middle{
+			height: 10em;
+			width: 10em;
+			margin: 2.5em;
+			margin-top: 2.3em;
+		}
+
+		.face{
+			height: 8em;
+			width: 8em;
+	
+		}
+	}
+
+
+
+}
+
+.hand{
+	width: 1em;
+	height: 50%;
+
+	position: absolute;
+	margin-left: 50%;
+}
+
+.blop{
+	width: 1em;
+	height: 1em;
+	background-color: white;
+	margin-top: 1em;
+	border: 1px solid rgb(0, 68, 98);
+	   @include single-box-shadow(rgba(81,208,255, 0.5), 0px, 2px, 1px, 0px);
+}
+
+.blop-inner{
+	@include box-sizing(border-box);
+	border: 1px solid rgba(255,255,255,0.3);
+	@include single-box-shadow(rgb(135,217,255), 0, 0, 7px, 5px, inset);
+
+}
+
+.blop-hi{
+	width: 0.6em;
+	margin: 0.15em;
+	height: 0.3em;
+	background-color: rgba(255,255,255,0.6);
+}
+
+.nu{
+	padding: 20em;
+	border-color: green;
+}
+
+
+.v3{
+	padding: 10em;
+	width: 100%;
+	background-color: grey;
+	background-image: url("bg.jpg");
+	.circle{
+
+		@include border-radius(150px);
+
+	}
+
+	.wrap{
+		width: 15em;
+		height: 15em;
+		
+		background-color: rgb(50,50,50);
+		@include single-box-shadow(rgba(0,0,0,0.4), 0, 0, 6px, 3px, inset);
+	}
+
+	.face-shad{
+		float: left;
+		width: 12em;
+		height: 12em;
+		margin: 1.5em;
+		@include single-box-shadow(rgba(0,0,0,0.4), 0, 4px, 6px, 3px);
+	}
+
+	.face{
+
+		
+		background-color: rgb(50,50,50);
+		position: relative;
+		overflow: hidden;
+        @include single-box-shadow(rgb(79,79,79), 0, -1px, 3px, 2px, inset);
+	}
+
+
+	.face-cover{
+		position: absolute;
+	      @include single-box-shadow(rgba(30,30,30, 0.7), 0, -6px, 3px, 2px, inset);
+	    top: 0.2em;
+	}
+
+	.main-grad{
+					@include background(
+	                  linear-gradient(bottom, rgb(30, 30, 30), rgb(50,50,50))
+	        );
+	}
+
+	.match{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.v4{
+	padding: 10em;
+	width: 100%;
+	background-image: url("bg.jpg");
+
+	.circle{
+
+		@include border-radius(150px);
+
+	}
+
+	.wrap{
+		width: 15em;
+		height: 15em;
+		position: relative;
+		background-color: rgb(50,50,50);
+		@include single-box-shadow(rgba(0,0,0,0.4), 0, 0, 6px, 3px, inset);
+	}
+
+	.face-shad{
+		float: left;
+		width: 11em;
+		height: 11em;
+		margin: 1em;
+		@include single-box-shadow(rgba(0,0,0,0.4), 0, 4px, 6px, 3px);
+	}
+
+	.face{
+
+		
+		background-color: rgb(50,50,50);
+		position: relative;
+		overflow: hidden;
+        @include single-box-shadow(rgb(79,79,79), 0, -1px, 3px, 2px, inset);
+	}
+
+
+	.face-cover{
+		position: absolute;
+	      @include single-box-shadow(rgba(30,30,30, 0.7), 0, -6px, 3px, 2px, inset);
+	    top: 0.2em;
+	}
+
+	.main-grad{
+					@include background(
+	                  linear-gradient(bottom, rgb(30, 30, 30), rgb(50,50,50))
+	        );
+	}
+
+	.match{
+		width: 100%;
+		height: 100%;
+	}
+
+	.strip{
+		background-color: gainsboro;
+		width: 90%;
+		height: 90%;
+		float: left;
+		margin: 5%;
+
+		@include background(
+	        linear-gradient(bottom, rgb(80, 80, 80), rgb(180,180,180))
+	    );
+	}
+
+	.strip-cover{
+		background-color: rgb(50,50,50);
+		width: 97%;
+		height: 97%;
+		margin: 1.5%;
+
+	}
+
+}

@@ -1,0 +1,199 @@
+/* line 1, modules/skeleton.scss */
+body { margin: 0; }
+
+/* line 5, modules/skeleton.scss */
+.kk-faceWrap { width: 100%; height: 100%; width: 10em; height: 10em; overflow: hidden; /*swap to clearfix*/ float: left; }
+
+/* line 14, modules/skeleton.scss */
+.kk-movingFace { width: 100%; height: 100%; background-color: #464646; -webkit-border-radius: 200px; -moz-border-radius: 200px; -ms-border-radius: 200px; -o-border-radius: 200px; border-radius: 200px; }
+
+/* line 22, modules/skeleton.scss */
+.khantrol-knob { position: relative; /* js this */ background-color: rgba(0, 0, 0, 0.4); float: left; }
+
+/* line 31, modules/skeleton.scss */
+.kk-hand { top: 0; width: 4px; border-top: 1em solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; /* js these */ position: absolute; height: 5em; /*half knob height */ left: 5em; /* half knob width - half stick width */ background-color: transparent; }
+
+/* line 45, modules/skeleton.scss */
+.kk-center { height: 4px; width: 4px; background-color: white; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; border-radius: 30px; }
+
+/* line 53, modules/skeleton.scss */
+input[type="number"], .khanknob-value { display: none; }
+
+/* line 59, modules/skeleton.scss */
+.on-light { width: 2em; height: 2em; background-color: red; }
+
+/* line 66, modules/skeleton.scss */
+.turned-on .on-light { width: 2em; height: 2em; }
+
+/* line 1, modules/skeu.scss */
+.bblk { background: url("bg.jpg"); padding: 10em; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 13, modules/skeu.scss */
+.skeu .kk-knobWrap { position: absolute; top: 1.7em; left: 2.6em; background-color: transparent; }
+/* line 20, modules/skeu.scss */
+.skeu .kk-faceWrap { width: 11em; height: 11em; background-color: transparent; }
+/* line 26, modules/skeu.scss */
+.skeu .kk-movingFace { background-color: transparent; }
+/* line 29, modules/skeu.scss */
+.skeu .kk-center { display: none; }
+/* line 32, modules/skeu.scss */
+.skeu .khantrol-knob { float: none; }
+/* line 36, modules/skeu.scss */
+.skeu .on-light { margin: 1em; display: none; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; }
+/* line 42, modules/skeu.scss */
+.skeu .kk-progress { margin-top: 0.9em; }
+/* line 47, modules/skeu.scss */
+.skeu .turned-on .on-light { display: block; background-color: #57e99a; }
+/* line 52, modules/skeu.scss */
+.skeu .holding .base-outline { -webkit-box-shadow: 0 0 6px 4px #57e99a; -moz-box-shadow: 0 0 6px 4px #57e99a; box-shadow: 0 0 6px 4px #57e99a; }
+/* line 55, modules/skeu.scss */
+.skeu .base-outline { height: 15em; width: 15em; background-color: black; border: 10px solid black; position: relative; overflow: hidden; }
+/* line 64, modules/skeu.scss */
+.skeu .base { -webkit-box-shadow: inset 0 -1px 3px 2px #484848; -moz-box-shadow: inset 0 -1px 3px 2px #484848; box-shadow: inset 0 -1px 3px 2px #484848; background-color: #323232; overflow: hidden; }
+/* line 72, modules/skeu.scss */
+.skeu .base-cover { top: 0.2em; }
+/* line 78, modules/skeu.scss */
+.skeu .middle { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #0a0a0a), color-stop(50%, #282828), color-stop(100%, #3c3c3c)); background: -webkit-linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); background: -moz-linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); background: -o-linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); background: linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); -webkit-box-shadow: 0 -5px 8px 1px #323232; -moz-box-shadow: 0 -5px 8px 1px #323232; box-shadow: 0 -5px 8px 1px #323232; height: 13em; width: 13em; margin: 1em; margin-top: 0.8em; position: relative; }
+/* line 92, modules/skeu.scss */
+.skeu .middle-shadow { margin-top: 30%; -webkit-box-shadow: 0 0 12px 1px rgba(15, 15, 15, 0.7); -moz-box-shadow: 0 0 12px 1px rgba(15, 15, 15, 0.7); box-shadow: 0 0 12px 1px rgba(15, 15, 15, 0.7); background-color: rgba(15, 15, 15, 0.7); }
+/* line 99, modules/skeu.scss */
+.skeu .face { width: 11em; height: 11em; margin: 1em; margin-top: 0.8em; background-color: #323232; -webkit-box-shadow: inset 0 -1px 3px 2px #4f4f4f; -moz-box-shadow: inset 0 -1px 3px 2px #4f4f4f; box-shadow: inset 0 -1px 3px 2px #4f4f4f; }
+/* line 109, modules/skeu.scss */
+.skeu .face-cover { -webkit-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); -moz-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); top: 0.2em; }
+/* line 117, modules/skeu.scss */
+.skeu .main-grad { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1e1e1e), color-stop(100%, #323232)); background: -webkit-linear-gradient(bottom, #1e1e1e, #323232); background: -moz-linear-gradient(bottom, #1e1e1e, #323232); background: -o-linear-gradient(bottom, #1e1e1e, #323232); background: linear-gradient(bottom, #1e1e1e, #323232); }
+/* line 123, modules/skeu.scss */
+.skeu .circle { -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; border-radius: 150px; }
+/* line 127, modules/skeu.scss */
+.skeu .abso { position: absolute; }
+/* line 131, modules/skeu.scss */
+.skeu .match { width: 100%; height: 100%; }
+/* line 136, modules/skeu.scss */
+.skeu .oh { overflow: hidden; }
+
+/* line 7, style.scss */
+body { background-color: gainsboro; -webkit-transition: all 0.2s linear; -webkit-transition-delay: 0s; -moz-transition: all 0.2s linear 0s; -o-transition: all 0.2s linear 0s; transition: all 0.2s linear 0s; margin: 2em; }
+
+/* line 16, style.scss */
+*::selection { background-color: transparent; }
+
+/* line 20, style.scss */
+.sli-hold { width: 100%; float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 2em; }
+
+/* line 29, style.scss */
+.wurkin-gurl .khanknob-container, .wurkin-gurl .kk-movingFace { background-color: transparent; }
+/* line 33, style.scss */
+.wurkin-gurl .khantrol-knob { height: 11em; width: 11em; }
+/* line 38, style.scss */
+.wurkin-gurl .khanknob-center { display: none; }
+/* line 42, style.scss */
+.wurkin-gurl .khanknob-wrap { background-color: transparent; position: absolute; }
+
+/* line 57, style.scss */
+.sku .circle { width: 10em; height: 10em; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; }
+/* line 65, style.scss */
+.sku .abso { position: absolute; top: 1em; left: 1em; }
+/* line 71, style.scss */
+.sku .middlecircle { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: absolute; width: 12em; height: 12em; margin: 1.5em; padding: 0em; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; }
+/* line 84, style.scss */
+.sku .middleshads { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #000000), color-stop(100%, #3e3e3e)); background: -webkit-linear-gradient(bottom, #000000, #3e3e3e); background: -moz-linear-gradient(bottom, #000000, #3e3e3e); background: -o-linear-gradient(bottom, #000000, #3e3e3e); background: linear-gradient(bottom, #000000, #3e3e3e); -webkit-box-shadow: 0 -5px 3px 1px rgba(60, 60, 60, 0.8); -moz-box-shadow: 0 -5px 3px 1px rgba(60, 60, 60, 0.8); box-shadow: 0 -5px 3px 1px rgba(60, 60, 60, 0.8); }
+/* line 92, style.scss */
+.sku .inner { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1d1d1d), color-stop(100%, #323232)); background: -webkit-linear-gradient(bottom, #1d1d1d, #323232); background: -moz-linear-gradient(bottom, #1d1d1d, #323232); background: -o-linear-gradient(bottom, #1d1d1d, #323232); background: linear-gradient(bottom, #1d1d1d, #323232); -webkit-box-shadow: inset 0 -1px 3px 2px #4f4f4f; -moz-box-shadow: inset 0 -1px 3px 2px #4f4f4f; box-shadow: inset 0 -1px 3px 2px #4f4f4f; }
+/* line 101, style.scss */
+.sku .vinner { -webkit-box-shadow: inset 0 -6px 1px 1px #1b1b1b; -moz-box-shadow: inset 0 -6px 1px 1px #1b1b1b; box-shadow: inset 0 -6px 1px 1px #1b1b1b; }
+/* line 105, style.scss */
+.sku .maindrop { -webkit-box-shadow: 0 0 6px 3px #2c2c2c; -moz-box-shadow: 0 0 6px 3px #2c2c2c; box-shadow: 0 0 6px 3px #2c2c2c; }
+/* line 110, style.scss */
+.sku .shadow { position: absolute; z-index: 0; width: 11em; margin-left: 0.5em; top: 3em; height: 12em; background-color: black; -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; border-radius: 150px; -webkit-box-shadow: 0 0 10px 1px black; -moz-box-shadow: 0 0 10px 1px black; box-shadow: 0 0 10px 1px black; }
+/* line 126, style.scss */
+.sku .az { position: absolute; z-index: 10; }
+/* line 131, style.scss */
+.sku .base { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: inset 0 -1px 3px 2px #484848; -moz-box-shadow: inset 0 -1px 3px 2px #484848; box-shadow: inset 0 -1px 3px 2px #484848; width: 15em; height: 15em; position: relative; -webkit-border-radius: 200px; -moz-border-radius: 200px; -ms-border-radius: 200px; -o-border-radius: 200px; border-radius: 200px; background-color: #323232; overflow: hidden; }
+/* line 142, style.scss */
+.sku .base-cover { margin-top: 0.2em; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #141414), color-stop(100%, #323232)); background: -webkit-linear-gradient(bottom, #141414, #323232); background: -moz-linear-gradient(bottom, #141414, #323232); background: -o-linear-gradient(bottom, #141414, #323232); background: linear-gradient(bottom, #141414, #323232); }
+/* line 150, style.scss */
+.sku .base-outline { width: 15em; height: 15em; position: relative; -webkit-border-radius: 200px; -moz-border-radius: 200px; -ms-border-radius: 200px; -o-border-radius: 200px; border-radius: 200px; border: 5px solid black; }
+/* line 158, style.scss */
+.sku .noise { height: 0.5em; width: 0.5em; background-color: white; margin-left: 4em; margin-top: 1em; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; border-radius: 30px; }
+
+/* line 175, style.scss */
+.blk .base-outline { height: 15em; width: 15em; background-color: black; border: 10px solid black; position: relative; overflow: hidden; }
+/* line 184, style.scss */
+.blk .base { -webkit-box-shadow: inset 0 -1px 3px 2px #484848; -moz-box-shadow: inset 0 -1px 3px 2px #484848; box-shadow: inset 0 -1px 3px 2px #484848; background-color: #323232; overflow: hidden; }
+/* line 192, style.scss */
+.blk .base-cover { top: 0.2em; }
+/* line 198, style.scss */
+.blk .middle { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #0a0a0a), color-stop(50%, #282828), color-stop(100%, #3c3c3c)); background: -webkit-linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); background: -moz-linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); background: -o-linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); background: linear-gradient(bottom, #0a0a0a, #282828, #3c3c3c); -webkit-box-shadow: 0 -5px 8px 1px #323232; -moz-box-shadow: 0 -5px 8px 1px #323232; box-shadow: 0 -5px 8px 1px #323232; height: 13em; width: 13em; margin: 1em; margin-top: 0.8em; position: relative; }
+/* line 212, style.scss */
+.blk .middle-shadow { margin-top: 30%; -webkit-box-shadow: 0 0 12px 1px rgba(15, 15, 15, 0.7); -moz-box-shadow: 0 0 12px 1px rgba(15, 15, 15, 0.7); box-shadow: 0 0 12px 1px rgba(15, 15, 15, 0.7); background-color: rgba(15, 15, 15, 0.7); }
+/* line 219, style.scss */
+.blk .face { width: 11em; height: 11em; margin: 1em; margin-top: 0.8em; background-color: #323232; -webkit-box-shadow: inset 0 -1px 3px 2px #4f4f4f; -moz-box-shadow: inset 0 -1px 3px 2px #4f4f4f; box-shadow: inset 0 -1px 3px 2px #4f4f4f; }
+/* line 229, style.scss */
+.blk .face-cover { -webkit-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); -moz-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); top: 0.2em; }
+/* line 237, style.scss */
+.blk .main-grad { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1e1e1e), color-stop(100%, #323232)); background: -webkit-linear-gradient(bottom, #1e1e1e, #323232); background: -moz-linear-gradient(bottom, #1e1e1e, #323232); background: -o-linear-gradient(bottom, #1e1e1e, #323232); background: linear-gradient(bottom, #1e1e1e, #323232); }
+/* line 243, style.scss */
+.blk .circle { -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; border-radius: 150px; }
+/* line 247, style.scss */
+.blk .abso { position: absolute; }
+/* line 251, style.scss */
+.blk .match { width: 100%; height: 100%; }
+/* line 256, style.scss */
+.blk .oh { overflow: hidden; }
+/* line 262, style.scss */
+.blk .v2 .middle { height: 10em; width: 10em; margin: 2.5em; margin-top: 2.3em; }
+/* line 269, style.scss */
+.blk .v2 .face { height: 8em; width: 8em; }
+
+/* line 280, style.scss */
+.hand { width: 1em; height: 50%; position: absolute; margin-left: 50%; }
+
+/* line 288, style.scss */
+.blop { width: 1em; height: 1em; background-color: white; margin-top: 1em; border: 1px solid #004462; -webkit-box-shadow: 0px 2px 1px 0px rgba(81, 208, 255, 0.5); -moz-box-shadow: 0px 2px 1px 0px rgba(81, 208, 255, 0.5); box-shadow: 0px 2px 1px 0px rgba(81, 208, 255, 0.5); }
+
+/* line 297, style.scss */
+.blop-inner { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0 0 7px 5px #87d9ff; -moz-box-shadow: inset 0 0 7px 5px #87d9ff; box-shadow: inset 0 0 7px 5px #87d9ff; }
+
+/* line 304, style.scss */
+.blop-hi { width: 0.6em; margin: 0.15em; height: 0.3em; background-color: rgba(255, 255, 255, 0.6); }
+
+/* line 311, style.scss */
+.nu { padding: 20em; border-color: green; }
+
+/* line 317, style.scss */
+.v3 { padding: 10em; width: 100%; background-color: grey; background-image: url("bg.jpg"); }
+/* line 322, style.scss */
+.v3 .circle { -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; border-radius: 150px; }
+/* line 328, style.scss */
+.v3 .wrap { width: 15em; height: 15em; background-color: #323232; -webkit-box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.4); -moz-box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.4); box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.4); }
+/* line 336, style.scss */
+.v3 .face-shad { float: left; width: 12em; height: 12em; margin: 1.5em; -webkit-box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4); box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4); }
+/* line 344, style.scss */
+.v3 .face { background-color: #323232; position: relative; overflow: hidden; -webkit-box-shadow: inset 0 -1px 3px 2px #4f4f4f; -moz-box-shadow: inset 0 -1px 3px 2px #4f4f4f; box-shadow: inset 0 -1px 3px 2px #4f4f4f; }
+/* line 354, style.scss */
+.v3 .face-cover { position: absolute; -webkit-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); -moz-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); top: 0.2em; }
+/* line 360, style.scss */
+.v3 .main-grad { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1e1e1e), color-stop(100%, #323232)); background: -webkit-linear-gradient(bottom, #1e1e1e, #323232); background: -moz-linear-gradient(bottom, #1e1e1e, #323232); background: -o-linear-gradient(bottom, #1e1e1e, #323232); background: linear-gradient(bottom, #1e1e1e, #323232); }
+/* line 366, style.scss */
+.v3 .match { width: 100%; height: 100%; }
+
+/* line 373, style.scss */
+.v4 { padding: 10em; width: 100%; background-image: url("bg.jpg"); }
+/* line 378, style.scss */
+.v4 .circle { -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; border-radius: 150px; }
+/* line 384, style.scss */
+.v4 .wrap { width: 15em; height: 15em; position: relative; background-color: #323232; -webkit-box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.4); -moz-box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.4); box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.4); }
+/* line 392, style.scss */
+.v4 .face-shad { float: left; width: 11em; height: 11em; margin: 1em; -webkit-box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4); box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4); }
+/* line 400, style.scss */
+.v4 .face { background-color: #323232; position: relative; overflow: hidden; -webkit-box-shadow: inset 0 -1px 3px 2px #4f4f4f; -moz-box-shadow: inset 0 -1px 3px 2px #4f4f4f; box-shadow: inset 0 -1px 3px 2px #4f4f4f; }
+/* line 410, style.scss */
+.v4 .face-cover { position: absolute; -webkit-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); -moz-box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); box-shadow: inset 0 -6px 3px 2px rgba(30, 30, 30, 0.7); top: 0.2em; }
+/* line 416, style.scss */
+.v4 .main-grad { background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1e1e1e), color-stop(100%, #323232)); background: -webkit-linear-gradient(bottom, #1e1e1e, #323232); background: -moz-linear-gradient(bottom, #1e1e1e, #323232); background: -o-linear-gradient(bottom, #1e1e1e, #323232); background: linear-gradient(bottom, #1e1e1e, #323232); }
+/* line 422, style.scss */
+.v4 .match { width: 100%; height: 100%; }
+/* line 427, style.scss */
+.v4 .strip { background-color: gainsboro; width: 90%; height: 90%; float: left; margin: 5%; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #505050), color-stop(100%, #b4b4b4)); background: -webkit-linear-gradient(bottom, #505050, #b4b4b4); background: -moz-linear-gradient(bottom, #505050, #b4b4b4); background: -o-linear-gradient(bottom, #505050, #b4b4b4); background: linear-gradient(bottom, #505050, #b4b4b4); }
+/* line 439, style.scss */
+.v4 .strip-cover { background-color: #323232; width: 97%; height: 97%; margin: 1.5%; }

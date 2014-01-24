@@ -1,0 +1,118 @@
+.kk-default{
+	font-family: helvetica;
+
+	.kk-face{
+		@include box-sizing(border-box);
+		width: 3em;
+		height: 3em;
+
+		cursor: pointer;
+
+		position: relative;
+		@include border-radius(1000px);
+
+
+		background-image: -o-linear-gradient(-90deg, #E8E8E8 0%, #C9C9C9 100%);
+		background-image: -moz-linear-gradient(-90deg, #E8E8E8 0%, #C9C9C9 100%);
+		background-image: -webkit-linear-gradient(-90deg, #E8E8E8 0%, #C9C9C9 100%);
+		background-image: -ms-linear-gradient(-90deg, #E8E8E8 0%, #C9C9C9 100%);
+		background-image: linear-gradient(-180deg, #E8E8E8 0%, #C9C9C9 100%);
+
+		border: 1px solid rgba(0,0,0,0.3);
+
+		&:before{
+			@include border-radius(1000px);
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			@include box-shadow(rgba(255,255,255,0.6) 0px 1px 1px 0px inset, rgba(0,0,0,0.2) 0px -2px 2px 0px inset);
+		}
+	}
+
+	.kk-hand{
+		@include box-sizing(border-box);
+		border-top: 6px solid black;
+		width: 2px;
+		height: 50%;
+		margin: 0 auto;
+		background-color: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+	}
+
+
+	.kk-value{
+		display: block;
+		margin: 0.5em;
+		text-align: center;
+	}
+}
+
+.kk-default.holding{
+	.kk-face{
+		@include box-shadow(rgb(98,150,199) 0px 0px 3px 2px);
+	}
+}
+
+.kk-skeleton{
+	text-align: center;
+
+	.kk-face{
+		width: 3em;
+		height: 3em;
+		border: 1px solid black;
+		@include border-radius(1000px);
+		background-color: white;
+	}
+
+	.kk-hand{
+		width: 1px;
+		border-top: 1em solid black;
+	}
+}
+
+.kk-skeleton.holding{
+	.kk-face{
+		@include box-shadow(rgb(98,150,199) 0px 0px 3px 2px);
+	}
+}
+
+.kk-fluid{
+	width: 100%;
+
+	.kk-face{
+		width: 100%;
+	}
+}
+
+.kk-rotating{
+	 -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.kk-movingFace{
+	width: 100%;
+	height: 100%;
+
+	@include border-radius(10000px);
+}
+
+
+.khantrol-knob{
+	position: relative; /* js this */
+	float: left;
+}
+
+
+.kk-original-elm{
+	display: none;
+}

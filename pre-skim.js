@@ -15,7 +15,7 @@
 		var pluginName = "khantrolKnob",
 				defaults = {
 				
-					
+					startingPos: -135,
 					range: 270,
 					css: "default",
 					responsive: false,
@@ -23,13 +23,22 @@
 					moveBy: 0.1,
 					minVal: 0,
 					maxVal: 100,
-					speed: 1,
-					scale: 1,
+					speed: 20,
 					holdKey: false,
 					groupKey: false,
-				
+					alsoTurn: false,
+					placeInner: ".nu",
+					innerHTML: "",
+					focusMode: true,
 
-					preHTML: "",
+					progressMode: "false",
+					progressGap: 10,
+					progressWidth: 15,
+
+					scaleExt: 5,
+					scaleBase: 3,
+
+					extraHTML: "",
 
 		};
 
@@ -60,6 +69,7 @@
 						startpos = 0;
 					}
 
+					var outerHTML = this.settings.outerHTML;
 
 					elm.wrap("<div class='khantrol-knob kk-"+css+"'>");
 					var wrap = elm.parent();
@@ -104,13 +114,13 @@
 					canvas = wrap.find(".kk-progress");
 					canvas
 						.css("position", "absolute") //summin weird here causes performance increase
-						.css("top", 0)					//on mobile
+						.css("top", 0)				 //on mobile
 						.css("left", 0)
 						.css("z-index", "0");
 
 					if(this.settings.responsive){
 						wrap.addClass("kk-fluid");
-						wrap.find(".kk-face").css("height", wrap.find(".kk-face").width());
+						wrap.find(".kk-face").css("height", wrap.find(".kk-face").width());						
 					}
 
 					var left = (movingFace.innerWidth() / 2) - (hand.width() / 2); //hand location
@@ -131,10 +141,7 @@
 					});
 
 					elm.attr("value", this.settings.minVal);
-					wrap.prepend(this.settings.preHTML);
-
-
-					elm.addClass("kk-original-elm");
+				
 				},
 
 				behaviour: function () {
@@ -149,43 +156,76 @@
 					var degRange = this.settings.range;
 					var max = degRange / 2;
 					var min = max * -1;
-					var speed = this.settings.speed;
+					var focusMode = this.settings.focusMode;
+					var responsive = this.settings.responsive;
+
+
+					var pmode = this.settings.progressMode;
+					var pgap = this.settings.progressGap + (movingFace.width() / 2);
+					
+					var ext = this.settings.scaleExt;
+					var scaleBase = this.settings.scaleBase;
+					var pwidth = this.settings.progressWidth;
 
 					var posTracker = 0;
 					var minVal = this.settings.minVal;
 					var maxVal = this.settings.maxVal;
 					var range = maxVal - minVal;
 					var rosetta = degRange / range;
-					
-					var scale = this.settings.scale;
-					var posScale = 1 / scale;
-					var degScale = (this.settings.range / (this.settings.maxVal - this.settings.minVal)) * scale;
+					var startpos = this.settings.range / 2;
+		
+					var degScale = this.settings.range / (this.settings.maxVal - this.settings.minVal);
 
 					mouse.clickpos = 0;
 					mouse.focus = elm;	//last knob clicked
-					mouse.holdKey = false;
+					mouse.holdKey = false; 
 					mouse.groupKey = false;
-					mouse.initdeg = 0;
+					var speed = this.settings.speed;
 
+		
+
+					function toRad(x){
+
+						var f = x * (Math.PI / 180);
+						
+						return f;
+					}
+
+					function toTheirs(x){
+					
+						x=x+270;
+						
+						return x;
+					}
+	
+					function performanceMagic(){
+						var canvas = knob.find("canvas").get(0);
+						var context = canvas.getContext('2d');
+						context.clearRect ( 0 , 0 , 0, 1);
+						//I have absolutely no clue why this increases the performance
+					} 
+
+			
 					
 					function preTurn(elm, e){
 				
 						mouse.clickpos = e.pageY || e.originalEvent.targetTouches[0].pageY;
 
 						mouse.focus = elm;
-						mouse.initdeg = elm.data("degs");
-						
+
 						elm.data("md", true);
 				
 					}
 
 
 					function turnKnob(e, downKey, upKey, touch){
-						var newPos;
+
 						if(mouse.focus.data("md") || downKey || upKey){
 							
 							if(!downKey && !upKey){
-								newPos = e.pageY || e.originalEvent.targetTouches[0].pageY;
+								var newPos = e.pageY || e.originalEvent.targetTouches[0].pageY;
+								//console.log(degScale);
+								console.log("mouse moved");
 							}
 							
 							if(touch){ //for touch movements, save performance and increase amount moved
@@ -197,47 +237,51 @@
 								thisElm = movingFace;
 							}
 						
-							var degs = thisElm.data("degs"); //get the degrees set
+								var degs = thisElm.data("degs"); //get the degrees set
 
+								if(mouse.clickpos < newPos || downKey){
+									if(newPos < posTracker){ //mouse direction shifting
+										console.log("CHANGED D, down now up");
+										//expoReset();
+										if(degs+moveby < max){
+											//degs=degs+1; 
+										} else{
+											degs = max;
+										}	
+									} else { //regular movement DOWN
 
+										if(degs-moveby > min){
+											var diff = (mouse.clickpos - newPos);
+											console.log(diff);
+											degs = (diff * degScale) - startpos;
 
-							var diff = (mouse.clickpos - newPos) * speed;	
-							var move = (diff * degScale) + mouse.initdeg
-
-							if(move < max && move > min && !downKey && !upKey){
-								degs = move;
-							} else{
-									if(move > max){
-									degs = max;
-								
-								}
-								else if(move < min){
-									degs = min;
-								
-								}
-							}
-							
-							if(downKey || upKey){
-
-								if(downKey){
-									if(degs-degScale > min){
-										degs=degs-degScale;
-									} else {
-										degs = min;
+										} else{
+											degs = min; 
+										}
 									}
-									
-								} else if(upKey){
-									if(degs+degScale < max){
-										degs=degs+degScale;
-									} else{
-										degs = max;
-									}
-									
-							
-								}
-							}
+				
+								} else if(mouse.clickpos > newPos || upKey){
+			
+									if(newPos > posTracker){ //mouse direction shifting
+										//console.log("CHANGED D up now down");
+										//expoReset();
+										if(degs-moveby > min){
+											//degs=degs-1; 
+										} else{
+											degs = min; 
+										}
+									} else{ //regular movement UP
+										if(degs+moveby < max){
+											var diff = (mouse.clickpos - newPos);
+											console.log(diff);
+											degs = (diff * degScale) - startpos;
 
-						
+											
+										} else{
+											degs = max;
+										}		
+									}
+								}
 
 								if(degs > min){
 									elm.parent().addClass("turned-on");
@@ -251,19 +295,19 @@
 									.css("-moz-transform", "rotate("+degs+"deg)")
 									.css("-ms-transform", "rotate("+degs+"deg)")
 									.css("-o-transform", "rotate("+degs+"deg)")
-									.css("transform", "rotate("+degs+"deg)"); //update css
+									.css("transform", "rotate("+degs+"deg)");
+									 //update css
 
 								var regDegs = thisElm.data("degs") + max; //won't be the same for every case, thise is only because of negative
-
-								var val = Math.round(regDegs / rosetta * posScale) / posScale;
-
-
+								var val = Math.round(regDegs / rosetta);
 								thisElm.data("value", val);
 
 								thisElm.trigger("change");
 								thisElm.parent().find(".khantrolKnob").trigger("change");
 
-
+								if(pmode === "bar"){
+									progArc(toTheirs(degs));
+								}
 								if(!downKey && !upKey){
 									posTracker = e.pageY || e.originalEvent.targetTouches[0].pageY;
 								}
@@ -329,7 +373,6 @@
 					});
 
 					movingFace.on("mousedown", function(e){
-						$("body").addClass("kk-rotating");
 						preTurn($(this), e);
 					});
 
@@ -341,7 +384,7 @@
 
 					$(document).on("mouseup", function(){
 						mouseup();
-						$("body").removeClass("kk-rotating");
+						
 					});
 
 					$(document).on("keydown", function(e){
@@ -376,7 +419,6 @@
 
 						if(code === 38 || code === 40){
 							expoReset();
-
 						}
 				
 					});
@@ -384,21 +426,8 @@
 					movingFace.on("change", function(e){
 						var val = $(this).data("value");
 						elm.attr("value", val);
-
-						if(parseInt($(this).parent().parent().find(".kk-value").html()) != val){
-							if(val == maxVal){
-								elm.trigger("max");
-							} else if(val == minVal){
-								elm.trigger("min");
-							} 
-							elm.trigger("change"); //only trigger actual changes of value
-						}
-
 						$(this).parent().parent().find(".kk-value").html(val);
-
-						
-					
-
+						elm.trigger("change");
 					});
 
 				}

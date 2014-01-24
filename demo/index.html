@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,212 +11,71 @@
 	</head>
 	<body>
 
-		<div class="content">
-		<div class="sku">
-		<div class="base-outline">
-		<div class="base">
-			<div class="base base-cover">
-			<div class="middlecircle middleshads">
+		<div class="content cf">
+		
+			<input type="number" id="kk-red" class="kk-col" />
+			<input type="number" id="kk-green" class="kk-col" />
+			<input type="number" id="kk-blue" class="kk-col" />
 
-			<div class="circle maindrop abso">
-				<div class="circle inner az">
-					<div class="circle vinner">
+			<input type="number" id="kk-skeleton" />
+			<button></button>
 
-					</div>
+			<input type="number" id="matt-black" />
+			<input type="number" id="matt-black-two" />
 
-				
-				</div>
-			</div>
-
-					<div class="shadow"></div>
-			</div>
-
-			</div>
-			</div>
-		</div>
-		</div>
-
-				<input type="number" class="kk" /><input type="number" class="lk" />
-
-
-			<div class="bar blk">
-				<div class="base-outline circle">
-					<div class="base circle match  oh">
-
-					</div>
-
-					<div class="circle match abso cover base-cover main-grad">
-					    <div class="middle circle">
-					    	<div class="circle match abso middle-shadow"></div>
-					    	<div class="face circle abso oh">
-					    		<div class="circle match abso face-cover main-grad"></div>
-					    		<div class="moving-circle match circle debug">
-						    		<div class="hand debug">
-						    			<div class="circle blop">
-							    			<div class="blop-inner match circle">
-							    				<div class="blop-hi circle"></div>
-							    			</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		
-					    	</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="base-outline circle wurkin-gurl">
-					<div class="base circle match  oh">
-
-					</div>
-
-					<div class="circle match abso cover base-cover main-grad">
-					    <div class="middle circle">
-					    	<div class="circle match abso middle-shadow"></div>
-					    	<div class="face circle abso oh">
-					    		<div class="circle match abso face-cover main-grad"></div>
-
-					    		<div class="moving-circle match circle debug">
-
-						    		
-
-					    		</div>
-					    	
-					    	</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="base-outline circle">
-					<div class="base circle match  oh">
-
-					</div>
-
-					<div class="circle match abso cover base-cover main-grad">
-					    <div class="middle circle">
-					    	<div class="circle match abso middle-shadow"></div>
-					    	<div class="face circle abso oh">
-					    		<div class="circle match abso face-cover main-grad"></div>
-					    		
-					    		
-					    	</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="base-outline circle v2">
-					<div class="base circle match  oh">
-
-					</div>
-
-					<div class="circle match abso cover base-cover main-grad">
-					    <div class="middle circle">
-					    	<div class="circle match abso middle-shadow"></div>
-					    	<div class="face circle abso oh">
-					    		<div class="circle match abso face-cover main-grad"></div>
-
-					    	</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="v3">
-				<div class="wrap circle">
-				<div class="face-shad circle">
-					<div class="face circle abso match oh">
-						<div class="circle match abso face-cover main-grad"></div>
-
-					</div>
-				</div>
-				</div>
-
-			</div>
-
-			<div class="v4">
-				<div class="wrap circle">
-					<div class="circle strip">
-						<div class="strip-cover circle">
-							<div class="face-shad circle">
-								<div class="face circle abso match oh">
-									<div class="circle match abso face-cover main-grad"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-
-			</div>
-
-		</div>
-		<div class="blk">
-		</div>
-
-
-		<div class="bblk skeu v4">
-
-		<input type="number" class="jk" />
 		</div>
 		<script>
 	
-		$(".kk").khantrolKnob({
-			holdKey: 16,
-			groupKey: 9,
-			progressMode: "bar",
-			range: Infinity
+		$(".kk-col").khantrolKnob({
+			groupKey: 71,
+			preHTML: "<div class='killa'></div>"
 		
-		});
-
-				$(".lk").khantrolKnob({
-			holdKey: 12,
-			groupKey: 9,
-			progressMode: "scale",
-			progressGap: 30,
-			range: 200,
-			scaleBase: 5,
-			scaleExt: 20
-		});
-
-
-			$(".khantrolKnob").khantrolKnob({
-				speed: 60,
-				holdKey: 16,
-				progressMode: "bar"
-			});
-
-		$(".jk").khantrolKnob({
-			holdKey: 65,
-			groupKey: 9,
-			extraHTML: '<div class="base-outline circle wurkin-gurl"><div class="base circle match  oh"></div><div class="circle match abso cover base-cover main-grad"><div class="middle circle"><div class="circle match abso middle-shadow"></div><div class="face circle abso oh"><div class="circle match abso face-cover main-grad"></div><div class="moving-circle match circle debug"></div></div></div></div></div>',
-			progressMode: "bar",
-			progressGap: 50
+			
 		});
 
 
 
 
-			function bgCol(){
-				var blue = $("#blue").attr("value");
-				var green = $("#green").attr("value");
-				var red = $("#red").attr("value");
-
-				var rgb = "rgb("+red+", "+green+", "+blue+")";
-				console.log(rgb);
-				$("body").css("background-color", rgb);
-			}
+		$("#kk-skeleton").khantrolKnob({
+			css: "skeleton",
+			groupKey: 71
+		});
 
 
-			$(".khantrolKnob").change(function(){
-							console.log("channn");
+		$(".kk-col").change(function(){
+			//bgColor();
+		});
 
-			})
+
+		$("#matt-black").khantrolKnob({
+			css: "matte"
+		});
+
+		$("#matt-black-two").khantrolKnob({
+			css: "matte-black"
+		})
+
+		function bgColor(){
+			var red = $("#kk-red").val();
+			var green = $("#kk-green").val();
+			var blue = $("#kk-blue").val();
+			var col = "rgb("+red+","+green+","+blue+")"
+
+			$("body").css("background-color", col);
+		}
+
+		$("#matt-black").change(function(){
+			console.log("change");
+		});
+
+
+		$("#matt-black").on("max", function(){
+			console.log("TO THE MAXIMUM");
+		});
+
+		$("#matt-black").on("min", function(){
+			console.log("to the minimum...");
+		});
 		</script>
 
 	</body>

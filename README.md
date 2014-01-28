@@ -24,3 +24,18 @@ $("#khantrol-knob").khantrolKnob();
 
 
 ###Tracking Changes
+to track any changes add an event listener to the original element:
+```javascript
+$("#khantrol-knob").change(function(){
+	console.log($(this).val());
+});
+```
+events are also fired when the knob is turned to the minimun and maximum values, these can be tracked like so:
+```javascript
+$("#khantrol-knob").on("max", function(){
+	console.log("turned to max");
+});
+$("#khantrol-knob").on("min", function(){
+	console.log("turned to min");
+});
+```

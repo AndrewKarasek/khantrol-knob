@@ -43,12 +43,13 @@ $("#khantrol-knob").on("min", function(){
 
 ##Options
 
-- `range`
-- `css`
-- `responsive`
-- `minVal`
-- `maxVal`
-- `speed`
-- `scale`
-- `holdKey`
-- `groupKey`
+
+- `css` (string) - allows a custom class to be passed to the wrapper with prefix .kk- for use with skins and custom styling _default: "default"
+- `responsive` (bool)
+- `range` (int)
+- `minVal` (int)
+- `maxVal` (int)
+- `speed` (int)
+- `scale` (int)
+- `holdKey` (int)
+- `groupKey` (int)

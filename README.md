@@ -44,7 +44,7 @@ $("#khantrol-knob").on("min", function(){
 ##Options
 
 
-- `css` (string) - allows a custom class to be passed to the wrapper with prefix .kk- for use with skins and custom styling _default: "default"
+- `css` (string) - allows a custom class to be passed to the wrapper with prefix .kk- for use with skins and custom styling _default: "default"_
 - `responsive` (bool)
 - `range` (int)
 - `minVal` (int)

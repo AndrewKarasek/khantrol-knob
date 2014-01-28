@@ -39,3 +39,16 @@ $("#khantrol-knob").on("min", function(){
 	console.log("turned to min");
 });
 ```
+
+
+##Options
+
+- `range`
+- `css`
+- `responsive`
+- `minVal`
+- `maxVal`
+- `speed`
+- `scale`
+- `holdKey`
+- `groupKey`

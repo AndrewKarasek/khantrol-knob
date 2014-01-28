@@ -104,8 +104,9 @@
 					canvas = wrap.find(".kk-progress");
 					canvas
 						.css("position", "absolute") //summin weird here causes performance increase
-						.css("top", 0)					//on mobile
+						.css("top", 0)			//on mobile
 						.css("left", 0)
+						.css("width", 0)
 						.css("z-index", "0");
 
 					if(this.settings.responsive){
@@ -256,7 +257,7 @@
 								var regDegs = thisElm.data("degs") + max; //won't be the same for every case, thise is only because of negative
 
 								var val = Math.round(regDegs / rosetta * posScale) / posScale;
-
+								val = val+ minVal;
 
 								thisElm.data("value", val);
 

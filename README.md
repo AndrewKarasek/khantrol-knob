@@ -44,12 +44,12 @@ $("#khantrol-knob").on("min", function(){
 ##Options
 
 
-- `css` (string) - allows a custom class to be passed to the wrapper with prefix .kk- for use with skins and custom styling _default: "default"_
-- `responsive` (bool)
-- `range` (int)
-- `minVal` (int)
-- `maxVal` (int)
-- `speed` (int)
-- `scale` (int)
-- `holdKey` (int)
-- `groupKey` (int)
+- `css` (string) - allows a custom class to be passed to the wrapper with prefix ".kk-" for use with skins and custom styling _default: "default"_
+- `responsive` (bool) - used to create fluid with wrappers _default: false_
+- `range` (int) - range of degrees the knob will rotate _default: 270_
+- `minVal` (int) - minimum value the knob will give _default: 0_
+- `maxVal` (int) - maximum value the knob will give _default: 100_
+- `speed` (int) - speed at which the knob can be rotated _default: 1_
+- `scale` (int) - scale at which numbers increase and decrease (10, 1, 0.1 etc) _default: 1_
+- `holdKey` (int) - keycode to control the knob with, must be unique _default: null_
+- `groupKey` (int) - keycode to control the group, does not need to be unique _default: null_

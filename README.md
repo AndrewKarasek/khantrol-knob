@@ -21,3 +21,6 @@ then call the plugin in javascript:
 ```javascript
 $("#khantrol-knob").khantrolKnob();
 ```
+
+
+###Tracking Changes

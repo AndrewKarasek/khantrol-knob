@@ -52,6 +52,19 @@ $("#khantrolKnob").khantrolKnob({
 });
 ```
 
+`groupKey` is made to be used across multiple knobs allowing you to control their values at the same time. In this example the `G` key is used as the groupKey:
+
+```javascript
+$("#khantrolAlpha").khantrolKnob({
+	groupKey: 71
+});
+$("#khantrolBravo").khantrolKnob({
+	groupKey: 71
+});
+$("#khantrolCharlie").khantrolKnob({
+	groupKey: 71
+});
+```
 
 a full list of javascript keycodes can be found [here](http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes). 
 

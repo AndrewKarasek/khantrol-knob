@@ -87,7 +87,7 @@ this class will automatically be prefixed with "kk-" giving the class name `.kk-
 }
 ```
 
-If you want a headstart while styling some basic styles are supplied to ensure the knob functions as desired while allowing you to extend the styles, to access them use `skeleton`:
+If you want a headstart some basic styles are supplied to ensure the knob functions as desired while allowing you to extend the styles, to access them use `skeleton`:
 
 ```javascript
 $("#khantrol-knob").khantrolKnob({

@@ -1,57 +1,221 @@
 /* line 1, modules/khantrol-default.scss */
-.kk-default { font-family: helvetica; }
-/* line 4, modules/khantrol-default.scss */
-.kk-default .kk-face { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 3em; height: 3em; cursor: pointer; position: relative; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; background-image: -o-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%); background-image: -moz-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%); background-image: -webkit-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%); background-image: -ms-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%); background-image: linear-gradient(-180deg, #e8e8e8 0%, #c9c9c9 100%); border: 1px solid rgba(0, 0, 0, 0.3); }
-/* line 23, modules/khantrol-default.scss */
-.kk-default .kk-face:before { -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; content: ""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset; -moz-box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset; box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset; }
-/* line 35, modules/khantrol-default.scss */
-.kk-default .kk-hand { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-top: 6px solid black; width: 2px; height: 50%; margin: 0 auto; background-color: none; position: absolute; top: 0; left: 0; }
-/* line 49, modules/khantrol-default.scss */
-.kk-default .kk-value { display: block; margin: 0.5em; text-align: center; }
+.kk-default {
+  font-family: helvetica; }
+  /* line 4, modules/khantrol-default.scss */
+  .kk-default .kk-face {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    position: relative;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+    border-radius: 1000px;
+    background-image: -o-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%);
+    background-image: -moz-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%);
+    background-image: -webkit-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%);
+    background-image: -ms-linear-gradient(-90deg, #e8e8e8 0%, #c9c9c9 100%);
+    background-image: linear-gradient(-180deg, #e8e8e8 0%, #c9c9c9 100%);
+    border: 1px solid rgba(0, 0, 0, 0.3); }
+    /* line 23, modules/khantrol-default.scss */
+    .kk-default .kk-face:before {
+      -webkit-border-radius: 1000px;
+      -moz-border-radius: 1000px;
+      -ms-border-radius: 1000px;
+      -o-border-radius: 1000px;
+      border-radius: 1000px;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset;
+      -moz-box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset;
+      box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset; }
+  /* line 35, modules/khantrol-default.scss */
+  .kk-default .kk-hand {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 6px solid black;
+    width: 2px;
+    height: 50%;
+    margin: 0 auto;
+    background-color: none;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* line 49, modules/khantrol-default.scss */
+  .kk-default .kk-value {
+    display: block;
+    margin: 0.5em;
+    text-align: center; }
 
 /* line 57, modules/khantrol-default.scss */
-.kk-default.holding .kk-face { -webkit-box-shadow: #6296c7 0px 0px 3px 2px; -moz-box-shadow: #6296c7 0px 0px 3px 2px; box-shadow: #6296c7 0px 0px 3px 2px; }
+.kk-default.holding .kk-face {
+  -webkit-box-shadow: #6296c7 0px 0px 3px 2px;
+  -moz-box-shadow: #6296c7 0px 0px 3px 2px;
+  box-shadow: #6296c7 0px 0px 3px 2px; }
 
 /* line 62, modules/khantrol-default.scss */
-.kk-skeleton { text-align: center; }
-/* line 65, modules/khantrol-default.scss */
-.kk-skeleton .kk-face { width: 3em; height: 3em; border: 1px solid black; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; background-color: white; }
-/* line 73, modules/khantrol-default.scss */
-.kk-skeleton .kk-hand { width: 1px; border-top: 1em solid black; }
+.kk-skeleton {
+  text-align: center; }
+  /* line 65, modules/khantrol-default.scss */
+  .kk-skeleton .kk-face {
+    width: 3em;
+    height: 3em;
+    border: 1px solid black;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+    border-radius: 1000px;
+    background-color: white; }
+  /* line 73, modules/khantrol-default.scss */
+  .kk-skeleton .kk-hand {
+    width: 1px;
+    border-top: 1em solid black; }
 
 /* line 80, modules/khantrol-default.scss */
-.kk-skeleton.holding .kk-face { -webkit-box-shadow: #6296c7 0px 0px 3px 2px; -moz-box-shadow: #6296c7 0px 0px 3px 2px; box-shadow: #6296c7 0px 0px 3px 2px; }
+.kk-skeleton.holding .kk-face {
+  -webkit-box-shadow: #6296c7 0px 0px 3px 2px;
+  -moz-box-shadow: #6296c7 0px 0px 3px 2px;
+  box-shadow: #6296c7 0px 0px 3px 2px; }
 
 /* line 85, modules/khantrol-default.scss */
-.kk-fluid { width: 100%; }
-/* line 88, modules/khantrol-default.scss */
-.kk-fluid .kk-face { width: 100%; }
+.kk-fluid {
+  width: 100%; }
+  /* line 88, modules/khantrol-default.scss */
+  .kk-fluid .kk-face {
+    width: 100%; }
 
 /* line 93, modules/khantrol-default.scss */
-.kk-rotating { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.kk-rotating {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 /* line 102, modules/khantrol-default.scss */
-.kk-movingFace { width: 100%; height: 100%; -webkit-border-radius: 10000px; -moz-border-radius: 10000px; -ms-border-radius: 10000px; -o-border-radius: 10000px; border-radius: 10000px; }
+.kk-movingFace {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 10000px;
+  -moz-border-radius: 10000px;
+  -ms-border-radius: 10000px;
+  -o-border-radius: 10000px;
+  border-radius: 10000px; }
 
 /* line 110, modules/khantrol-default.scss */
-.khantrol-knob { position: relative; /* js this */ float: left; }
+.khantrol-knob {
+  position: relative;
+  /* js this */
+  float: left; }
 
 /* line 116, modules/khantrol-default.scss */
-.kk-original-elm { display: none; }
+.kk-original-elm {
+  display: none; }
 
 /* line 2, modules/matte-black.scss */
-.kk-matte-black .kk-face { position: relative; width: 7em; height: 7em; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; /* Oval 2: */ background-image: -o-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%); background-image: -moz-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%); background-image: -webkit-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%); background-image: -ms-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%); background-image: linear-gradient(-180deg, #3d3d3d 0%, #262626 100%); -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset; -moz-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset; box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 0.35em solid black; }
-/* line 18, modules/matte-black.scss */
-.kk-matte-black .kk-face:before { content: ""; position: absolute; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; top: 0.5em; left: 0.5em; bottom: 0.5em; right: 0.5em; background-image: -o-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%); background-image: -moz-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%); background-image: -webkit-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%); background-image: -ms-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%); background-image: linear-gradient(-180deg, #4d4d4d 0%, #151515 100%); -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 1px 0px inset; -moz-box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 1px 0px inset; box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 1px 0px inset; }
-/* line 35, modules/matte-black.scss */
-.kk-matte-black .kk-face:after { content: ""; position: absolute; top: 1.25em; left: 1.25em; bottom: 1.25em; right: 1.25em; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-image: -o-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: -moz-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: -webkit-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: -ms-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: linear-gradient(-180deg, #3c3c3c 0%, #282828 100%); -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0; -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0; box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0; }
+.kk-matte-black .kk-face {
+  position: relative;
+  width: 7em;
+  height: 7em;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Oval 2: */
+  background-image: -o-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%);
+  background-image: -moz-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%);
+  background-image: -webkit-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%);
+  background-image: -ms-linear-gradient(-90deg, #3d3d3d 0%, #262626 100%);
+  background-image: linear-gradient(-180deg, #3d3d3d 0%, #262626 100%);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.35em solid black; }
+  /* line 18, modules/matte-black.scss */
+  .kk-matte-black .kk-face:before {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+    border-radius: 1000px;
+    top: 0.5em;
+    left: 0.5em;
+    bottom: 0.5em;
+    right: 0.5em;
+    background-image: -o-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%);
+    background-image: -moz-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%);
+    background-image: -webkit-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%);
+    background-image: -ms-linear-gradient(-90deg, #4d4d4d 0%, #151515 100%);
+    background-image: linear-gradient(-180deg, #4d4d4d 0%, #151515 100%);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 1px 0px inset;
+    -moz-box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 1px 0px inset;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 1px 0px inset; }
+  /* line 35, modules/matte-black.scss */
+  .kk-matte-black .kk-face:after {
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    left: 1.25em;
+    bottom: 1.25em;
+    right: 1.25em;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: -o-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%);
+    background-image: -moz-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%);
+    background-image: -webkit-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%);
+    background-image: -ms-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%);
+    background-image: linear-gradient(-180deg, #3c3c3c 0%, #282828 100%);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0; }
 /* line 54, modules/matte-black.scss */
-.kk-matte-black .kk-movingFace { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 3.8em; height: 3.8em; position: absolute; top: 1.25em; left: 1.25em; opacity: 0.2; }
+.kk-matte-black .kk-movingFace {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 3.8em;
+  height: 3.8em;
+  position: absolute;
+  top: 1.25em;
+  left: 1.25em;
+  opacity: 0.2; }
 /* line 66, modules/matte-black.scss */
-.kk-matte-black .kk-hand { width: 1px; border-top: 10px solid white; }
+.kk-matte-black .kk-hand {
+  width: 1px;
+  border-top: 10px solid white; }
 /* line 71, modules/matte-black.scss */
-.kk-matte-black .kk-value { text-align: center; display: block; margin: 1em; }
+.kk-matte-black .kk-value {
+  text-align: center;
+  display: block;
+  margin: 1em; }
 
 /* base: */
 /* line 8, style.scss */
-.content { background-color: red; }
+.content {
+  background-color: red; }

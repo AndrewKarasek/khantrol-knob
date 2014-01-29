@@ -160,8 +160,15 @@
 					
 					var scale = this.settings.scale;
 					var posScale = 1 / scale;
+					console.log("scale: " + scale);
+
+					console.log("range: " + range); 
+				
 					var degScale = (this.settings.range / (this.settings.maxVal - this.settings.minVal)) * scale;
 
+
+					console.log("degScale: " +degScale);
+						console.log("");
 					mouse.clickpos = 0;
 					mouse.focus = elm;	//last knob clicked
 					mouse.holdKey = false;
@@ -256,8 +263,11 @@
 
 								var regDegs = thisElm.data("degs") + max; //won't be the same for every case, thise is only because of negative
 
-								var val = Math.round(regDegs / rosetta * posScale) / posScale;
-								val = val+ minVal;
+								var val = Math.round(regDegs / rosetta * posScale); // posScale;
+								
+								console.log(minVal);
+								val = val + (minVal * posScale);
+								val = val / posScale;
 
 								thisElm.data("value", val);
 

@@ -44,13 +44,17 @@ $("#khantrol-knob").on("min", function(){
 ```
 
 ##Control
-Khantrol knob comes setup to work perfectly with the mouse and touch events, extra control can be added with the keyboard, when a `holdKey` or `groupKey` is definied the user can hold this key down and use the up and down keys on their keyboard to control the value of the knob. In this example the `h` key is used as the holdKey:
+Khantrol knob comes setup to work perfectly with the mouse and touch events, extra control can be added with the keyboard, when a `holdKey` or `groupKey` is definied the user can hold this key down and use the `up` and `down` keys on their keyboard to control the value of the knob. In this example the `H` key (keycode 72) is used as the holdKey:
 
-```javascript```
+```javascript
 $("#khantrolKnob").khantrolKnob({
 	holdKey: 72
 });
 ```
+
+
+a full list of javascript keycodes can be found [here](http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes). 
+
 ##Options
 
 

@@ -46,10 +46,10 @@
 /* line 35, modules/matte-black.scss */
 .kk-matte-black .kk-face:after { content: ""; position: absolute; top: 1.25em; left: 1.25em; bottom: 1.25em; right: 1.25em; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-image: -o-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: -moz-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: -webkit-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: -ms-linear-gradient(-90deg, #3c3c3c 0%, #282828 100%); background-image: linear-gradient(-180deg, #3c3c3c 0%, #282828 100%); -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0; -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0; box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -2px 2px 0px inset, black 0px 20px 30px 0; }
 /* line 54, modules/matte-black.scss */
-.kk-matte-black .kk-movingFace { width: 4em; height: 4em; position: absolute; top: 1.25em; left: 1.25em; }
-/* line 64, modules/matte-black.scss */
+.kk-matte-black .kk-movingFace { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 3.8em; height: 3.8em; position: absolute; top: 1.25em; left: 1.25em; opacity: 0.2; }
+/* line 66, modules/matte-black.scss */
 .kk-matte-black .kk-hand { width: 1px; border-top: 10px solid white; }
-/* line 69, modules/matte-black.scss */
+/* line 71, modules/matte-black.scss */
 .kk-matte-black .kk-value { text-align: center; display: block; margin: 1em; }
 
 /* base: */

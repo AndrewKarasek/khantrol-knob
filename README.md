@@ -68,6 +68,34 @@ $("#khantrolCharlie").khantrolKnob({
 
 a full list of javascript keycodes can be found [here](http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes). 
 
+
+##Styling
+khantrol knob comes with a default set of styles that work out of the box. If you want to custom style the knob you can simply give a value to css to create a custom class: 
+
+```javascript
+$("#khantrol-knob").khantrolKnob({
+	css: "my-class";
+})
+```
+
+this class will automatically be prefixed with "kk-" giving the class name `.kk-my-class`. To ensure the knob works correctly a width and height must be defined for `.kk-face`:
+
+```css
+.kk-my-class .kk-face{
+	width: 2em;
+	height: 2em;
+}
+```
+
+If you want a headstart while styling some basic styles are supplied to ensure the knob functions as desired while allowing you to extend the styles, to access them use `skeleton`:
+
+```javascript
+$("#khantrol-knob").khantrolKnob({
+	css: "skeleton";
+})
+```
+
+
 ##Options
 
 

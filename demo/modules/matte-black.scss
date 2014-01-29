@@ -52,11 +52,13 @@
 		}
 
 			.kk-movingFace{
-				width: 4em;
-				height: 4em;
+				@include box-sizing(border-box);
+				width: 3.8em;
+				height: 3.8em;
 				position: absolute;
 				top: 1.25em;
 				left: 1.25em;
+				opacity: 0.2;
 
 			}
 

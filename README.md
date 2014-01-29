@@ -21,7 +21,10 @@ then call the plugin in javascript:
 ```javascript
 $("#khantrol-knob").khantrolKnob();
 ```
-
+to get the value use `.val()` on the original element: 
+```javascript
+$("#khantrol-knob").val()
+```
 
 ###Tracking Changes
 to track any changes add an event listener to the original element:
@@ -40,6 +43,13 @@ $("#khantrol-knob").on("min", function(){
 });
 ```
 
+##Control
+Khantrol knob comes setup to work perfectly with the mouse and touch events, extra control can be added with the keyboard, when a `holdKey` or `groupKey` is definied the user can hold this key down and use the up and down keys on their keyboard to control the value of the knob. In this example the `h` key is used as the holdKey:
+
+```javascript```
+$("#khantrolKnob").khantrolKnob({
+	holdKey: 72
+});
 
 ##Options
 

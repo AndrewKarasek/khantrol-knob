@@ -50,7 +50,7 @@ Khantrol knob comes setup to work perfectly with the mouse and touch events, ext
 $("#khantrolKnob").khantrolKnob({
 	holdKey: 72
 });
-
+```
 ##Options
 
 

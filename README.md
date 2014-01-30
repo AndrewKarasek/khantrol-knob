@@ -108,3 +108,7 @@ $("#khantrol-knob").khantrolKnob({
 - `scale` (int) - scale at which numbers increase and decrease (10, 1, 0.1 etc) _default: 1_
 - `holdKey` (int) - keycode to control the knob with, must be unique _default: null_
 - `groupKey` (int) - keycode to control the group, does not need to be unique _default: null_
+
+#Examples
+
+for examples please visit the [Khantrol Knob Site](http://khantrol-knob.prythm.com)
